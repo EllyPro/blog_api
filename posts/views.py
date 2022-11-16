@@ -15,4 +15,3 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    
